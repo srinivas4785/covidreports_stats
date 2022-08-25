@@ -53,23 +53,8 @@ function India() {
     axios
       .get("https://data.covid19india.org/v4/min/data.min.json")
       .then((res) => {
-        // console.log(res.data);
-        // let arr3 = [];
-        // Object.keys(res.data).map((data12) => {
-        //   console.log(Object.keys(res.data[data12].districts));
-        //   // let obj = {
-        //   //   ...res.data[data12].total,
-        //   //   district:data12
-        //   // };
-        //   // arr3.push(obj);
-        // });
-        // console.log(arr3);
-
         setDist(res.data);
-        console.log(res.data);
-      
-
-
+        console.log(res.data)
       });
   }, []);
 
